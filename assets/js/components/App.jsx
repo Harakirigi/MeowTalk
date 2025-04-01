@@ -1,6 +1,6 @@
 import React from "react";
 
-const Main = () => {
+function App() {
   return (
     <div className="wrapper">
         <div className="container">
@@ -17,6 +17,6 @@ const Main = () => {
         </div>
     </div>
   );
-};
+}
 
-export default Main;
+export default App;
