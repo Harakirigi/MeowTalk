@@ -20,7 +20,12 @@ import "phoenix_html"
 // Establish Phoenix Socket and LiveView configuration.
 import {Socket} from "phoenix"
 import {LiveSocket} from "phoenix_live_view"
-import topbar from "../vendor/topbar"
+import topbar from "../vendor/topbar.js"
+
+// Import React and ReactDOM
+import React from "react";
+import ReactDOM from "react-dom";
+import Main from "./components/Main.jsx";
 
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 let liveSocket = new LiveSocket("/live", Socket, {
@@ -42,3 +47,16 @@ liveSocket.connect()
 // >> liveSocket.disableLatencySim()
 window.liveSocket = liveSocket
 
+
+// REACT CODE
+document.addEventListener("DOMContentLoaded", () => {
+    // Find the container for the React component (e.g., <div id="hello-react"></div>)
+    const reactElement = document.getElementById("hello-react");
+    
+    if (reactElement) {
+      // Render the React component inside the found div
+      ReactDOM.render(<Main />, reactElement);
+    }
+  });
+
+  
