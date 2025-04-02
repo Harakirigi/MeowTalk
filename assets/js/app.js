@@ -22,10 +22,7 @@ import {Socket} from "phoenix"
 import {LiveSocket} from "phoenix_live_view"
 import topbar from "../vendor/topbar.js"
 
-// Import React and ReactDOM
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./components/App.jsx";
+
 
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 let liveSocket = new LiveSocket("/live", Socket, {
@@ -49,10 +46,9 @@ window.liveSocket = liveSocket
 
 
 // REACT CODE
-document.addEventListener("DOMContentLoaded", () => {
-    ReactDOM.render(
-      <App />,
-      document.getElementById("react-root")
-    );
-  });
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App.jsx";
+
+ReactDOM.render(<Router />, document.getElementById("root"));
   
