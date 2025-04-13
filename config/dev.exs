@@ -3,9 +3,9 @@ import Config
 # Configure your database
 config :meow_talk, MeowTalk.Repo,
   username: "root",
-  password: "blud//water",
+  password: "",
   hostname: "localhost",
-  database: "meowtalk",
+  database: "meow_talk_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -23,7 +23,7 @@ config :meow_talk, MeowTalkWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "QD9UYnqYQorwovE2bkDvTCVsh8hRjW0Y+//Dj8y52ySO9UcrMRaZ7S27zVvXtYdf",
+  secret_key_base: "p5pC/16PIJVCkpn+ciTY1xX/x1ym/x5YBVTGX7sgioh0AYy5SYG7pzORQlOv6ruI",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:meow_talk, ~w(--sourcemap=inline --watch)]},
     tailwind: {Tailwind, :install_and_run, [:meow_talk, ~w(--watch)]}

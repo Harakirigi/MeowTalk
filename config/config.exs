@@ -20,7 +20,7 @@ config :meow_talk, MeowTalkWeb.Endpoint,
     layout: false
   ],
   pubsub_server: MeowTalk.PubSub,
-  live_view: [signing_salt: "B5khpEoN"]
+  live_view: [signing_salt: "Sjrb5xYz"]
 
 # Configures the mailer
 #

@@ -17,7 +17,7 @@ config :meow_talk, MeowTalk.Repo,
 # you can enable the server option below.
 config :meow_talk, MeowTalkWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "Et4MHrwoTJxoFhYiJz+8AddSTs9rNCHPGkeZ3eAaTsLflVI7u+/hTorFUkVp/JA9",
+  secret_key_base: "h9vUw4WuKM4oy2Y9BFKo21o1dIUq7zCPdHBKGJm557nwQHBlq38u+yA7ZTHvl7XG",
   server: false
 
 # In test we don't send emails

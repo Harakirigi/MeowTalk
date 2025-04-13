@@ -7,7 +7,7 @@ defmodule MeowTalkWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_meow_talk_key",
-    signing_salt: "hBWwBttL",
+    signing_salt: "lpp8l6jp",
     same_site: "Lax"
   ]
 
